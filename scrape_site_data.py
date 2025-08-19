@@ -31,6 +31,8 @@ class SiteScraper:
             for link in element.select('a.property-card-link[data-test="property-card-link"]'):
                 self.list_of_links.append(link["href"])
 
-        print(self.list_of_addresses)
-        print(self.list_of_prices)
-        print(self.list_of_links)
+        #print(self.list_of_addresses)
+        #print(self.list_of_prices)
+        #print(self.list_of_links)
+        generated_tupple = (self.list_of_addresses, self.list_of_prices, self.list_of_links)
+        return generated_tupple
